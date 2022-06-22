@@ -1,9 +1,16 @@
 <template>
-  <nav>
-    <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
+  <nav
+    class="nav text-uppercase bg-success d-flex justify-content-around align-items-center"
+  >
+    <router-link class="text-white" :to="{ name: 'projects' }"
+      >projects</router-link
+    >
+    |
+    <router-link class="text-white" :to="{ name: 'add-project' }"
+      >add project</router-link
+    >
   </nav>
-  <router-view/>
+  <router-view />
 </template>
 
 <style lang="scss">
